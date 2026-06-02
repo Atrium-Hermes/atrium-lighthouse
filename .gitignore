@@ -13,6 +13,7 @@
 .xai-cache/
 .bankr-cache/
 .pending-notify/
+.pending-atrium/
 .pending-replicate/
 .pending-supernotes/
 .pending-deploy/

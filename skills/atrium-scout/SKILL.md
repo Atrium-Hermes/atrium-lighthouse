@@ -44,14 +44,20 @@ hits). Produce a short table: need → recommended skill, price, why, and the
 one-liner to use it.
 
 ### 4. Optionally invoke (only if enabled)
-If `scout-config.md` has `auto_invoke: true` AND a candidate's `pricePerCall` ≤
-`max_price_usdc` AND `ATRIUM_PRIVATE_KEY` is set: invoke the single highest-value
-match to unblock an active loop —
-```bash
-atrium invoke <skillId> --network base    # (install via curl|bash if `atrium` is missing)
+The wallet key (`ATRIUM_PRIVATE_KEY`) is deliberately kept OUT of the agent's
+environment, so the actual on-chain spend happens in a post-process step, not here.
+If `scout-config.md` has `auto_invoke: true` AND the single highest-value candidate's
+`pricePerCall` ≤ `max_price_usdc` AND it is not already in `memory/atrium/rented/`,
+write a rental request for it to `.pending-atrium/<slug>.json`:
+```json
+{ "skillId": "0x…", "slug": "<name>", "price": "0.1", "network": "base", "need": "<what it unblocks>" }
 ```
-then fetch the body and stash it under `memory/atrium/rented/<slug>.md` for the
-relevant loop. Cap at ONE auto-invoke per run. Otherwise, recommend only.
+`scripts/postprocess-atrium.sh` (run after the agent, with the wallet key) enforces
+the cap again, skips already-rented skills, runs `atrium invoke`, and stashes the
+body under `memory/atrium/rented/<slug>.md`. Cap at ONE pending request per run.
+If a `.pending-atrium/<slug>.done` marker from a prior run exists, record the rental
+(skill, price, tx) in `memory/MEMORY.md` and the daily log. If `auto_invoke` is
+false or the key is unset, write no request and recommend only.
 
 ### 5. Notify
 Send the operator the ranked recommendations (need → skill → price → why), plus any
