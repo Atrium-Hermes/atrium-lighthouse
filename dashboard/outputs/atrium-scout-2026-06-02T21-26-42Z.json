@@ -1,0 +1,156 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_summary",
+        "grid_stats",
+        "sep1",
+        "heading_toppick",
+        "text_topskill",
+        "sep2",
+        "heading_status",
+        "alert_rented",
+        "sep3",
+        "heading_nextsteps",
+        "text_pushed",
+        "text_step1",
+        "text_step2",
+        "link_pr",
+        "text_step3"
+      ]
+    },
+    "heading_summary": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h2"
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_skills",
+        "stat_invocations"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Live",
+        "value": "15"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "~12"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_toppick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Skill",
+        "level": "h2"
+      }
+    },
+    "text_topskill": {
+      "type": "Text",
+      "props": {
+        "text": "generate-playwright-tests: $0.1 cost, 6 invocations (the most-used skill on the market, under the $0.5 cap)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Wallet Status",
+        "level": "h2"
+      }
+    },
+    "alert_rented": {
+      "type": "Alert",
+      "props": {
+        "title": "Rented Nothing",
+        "message": "ATRIUM_PRIVATE_KEY not in env. Wallet key not passed to any workflow step, so renting has never been possible.",
+        "type": "warning"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_nextsteps": {
+      "type": "Heading",
+      "props": {
+        "text": "To Go Live",
+        "level": "h2"
+      }
+    },
+    "text_pushed": {
+      "type": "Text",
+      "props": {
+        "text": "Branch scout/wire-atrium-invoke pushed: secure postprocess-atrium.sh keeps key out of agent step"
+      }
+    },
+    "text_step1": {
+      "type": "Text",
+      "props": {
+        "text": "Set the ATRIUM_PRIVATE_KEY secret"
+      }
+    },
+    "text_step2": {
+      "type": "Text",
+      "props": {
+        "text": "Add one env line to aeon.yml (bot can't edit workflows — manual action required)"
+      }
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Open and merge scout/wire-atrium-invoke PR",
+        "href": "https://github.com/Atrium-Hermes/atrium-lighthouse/compare/main...scout/wire-atrium-invoke?expand=1",
+        "source": "GitHub"
+      }
+    },
+    "text_step3": {
+      "type": "Text",
+      "props": {
+        "text": "Next run will rent automatically"
+      }
+    }
+  }
+}
