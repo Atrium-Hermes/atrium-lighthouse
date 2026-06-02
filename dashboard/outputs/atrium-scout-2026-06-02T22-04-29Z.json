@@ -1,0 +1,206 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout Run 5",
+        "description": "Marketplace unchanged — 15 skills live, leader at 6 invocations"
+      },
+      "children": [
+        "stack_header",
+        "separator_1",
+        "stack_top_pick",
+        "separator_2",
+        "stack_status",
+        "separator_3",
+        "alert_action"
+      ]
+    },
+    "stack_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_run",
+        "stat_skills",
+        "stat_leader"
+      ]
+    },
+    "stat_run": {
+      "type": "Stat",
+      "props": {
+        "label": "Run",
+        "value": "5"
+      }
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Live Skills",
+        "value": "15"
+      }
+    },
+    "stat_leader": {
+      "type": "Stat",
+      "props": {
+        "label": "Leader Invocations",
+        "value": "6"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_top",
+        "grid_pick_details"
+      ]
+    },
+    "heading_top": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Pick: generate-playwright-tests",
+        "level": "h2"
+      }
+    },
+    "grid_pick_details": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_cost",
+        "stat_invocations",
+        "badge_cap_status"
+      ]
+    },
+    "stat_cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.10"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "6"
+      }
+    },
+    "badge_cap_status": {
+      "type": "Badge",
+      "props": {
+        "text": "Under $0.50 cap",
+        "variant": "secondary"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_other",
+        "text_crypto",
+        "heading_status",
+        "grid_status_items"
+      ]
+    },
+    "heading_other": {
+      "type": "Heading",
+      "props": {
+        "text": "Other Proven Skills",
+        "level": "h3"
+      }
+    },
+    "text_crypto": {
+      "type": "Text",
+      "props": {
+        "text": "crypto: only other proven skill, 10x over cap"
+      }
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Current Status",
+        "level": "h3"
+      }
+    },
+    "grid_status_items": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "badge_report_only",
+        "badge_rented_empty",
+        "badge_no_marker",
+        "badge_key_unset"
+      ]
+    },
+    "badge_report_only": {
+      "type": "Badge",
+      "props": {
+        "text": "Report-only",
+        "variant": "outline"
+      }
+    },
+    "badge_rented_empty": {
+      "type": "Badge",
+      "props": {
+        "text": "rented/ empty",
+        "variant": "outline"
+      }
+    },
+    "badge_no_marker": {
+      "type": "Badge",
+      "props": {
+        "text": "No .done marker (4 settle-capable runs)",
+        "variant": "outline"
+      }
+    },
+    "badge_key_unset": {
+      "type": "Badge",
+      "props": {
+        "text": "ATRIUM_PRIVATE_KEY unset",
+        "variant": "destructive"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_action": {
+      "type": "Alert",
+      "props": {
+        "title": "Action Required",
+        "message": "Pick already queued at .pending-atrium/. Set ATRIUM_PRIVATE_KEY secret on a funded Base wallet. Next run will rent it automatically.",
+        "type": "warning"
+      }
+    }
+  }
+}
