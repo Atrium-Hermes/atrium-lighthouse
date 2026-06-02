@@ -235,6 +235,9 @@ skills:
   signal-verdict: { enabled: false, schedule: "0 8 * * 1", model: "claude-sonnet-4-6" } # Monday — verify tracker skills produce citable signals; surface uncited trackers
   skill-enabler: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — flip skills enabled:true by slug list, validate, commit + open PR
 
+  atrium-publish: { enabled: false, schedule: "0 13 * * *" }
+  atrium-scout: { enabled: true, schedule: "0 11 * * *" }
+  atrium-earnings: { enabled: true, schedule: "0 14 * * *" }
   # --- Fallback (must be last) ---
   heartbeat: { enabled: true, schedule: "0 8,14,20 * * *" }
 
