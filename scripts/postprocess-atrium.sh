@@ -81,11 +81,9 @@ for req_file in "$PENDING_DIR"/*.json; do
 
   echo "atrium-postprocess: invoking $SLUG ($SKILL_ID) at \$$PRICE on $NETWORK..."
 
-  # Sanity: wallet must hold enough USDC. balance is read-only.
-  atrium balance --network "$NETWORK" || {
-    echo "atrium-postprocess: balance check failed, skipping (wallet may be unfunded)"
-    continue
-  }
+  # Balance/allowance are enforced on-chain by invoke itself (it reverts if short),
+  # so this is informational only — never block a funded wallet on a CLI quirk.
+  atrium balance --network "$NETWORK" 2>/dev/null || echo "atrium-postprocess: balance query failed (CLI quirk) — proceeding; invoke enforces funds on-chain"
 
   INVOKE_OUT=$(atrium invoke "$SKILL_ID" --network "$NETWORK" 2>&1) || {
     echo "atrium-postprocess: invoke failed for $SLUG:"
