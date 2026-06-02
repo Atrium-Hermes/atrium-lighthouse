@@ -1,19 +1,20 @@
 # Atrium scout config
-#
-# Read by the atrium-scout skill.
 
 auto_invoke: true
-# false = report-only (discover + recommend, spend nothing). Flip to true ONLY after
-# the ATRIUM_PRIVATE_KEY wallet is funded with USDC + a little ETH on Base mainnet.
+# LIVE — the agent pays USDC to rent skills. The ATRIUM_PRIVATE_KEY wallet float is
+# the hard cap on total spend; keep only a small amount in it.
 
 max_price_usdc: 0.5
-# Never auto-invoke a skill priced above this. The scout rents at most ONE skill per run.
+# Rent any skill priced at or below this. One rental per run.
 
-allowed_categories: [document-processing, dev, research, crypto]
-# Restrict auto-invoke to categories relevant to this agent's work. Recommendations
-# outside these still get surfaced — they just won't be auto-rented.
+allowed_categories: any
+# No category restriction — explore the whole marketplace.
 
 notes: |
-  Prefer skills with proven usage (higher totalInvocations) and an attestation when
-  present. Skip weak/irrelevant hits rather than padding. Stash rented bodies under
-  memory/atrium/rented/<slug>.md and cite which open loop they unblock.
+  Standing goal: build a broad capability library by exploring the marketplace.
+  Each run, rent the SINGLE highest-value skill that is NOT already in
+  memory/atrium/rented/ — prefer higher totalInvocations and onchain attestations,
+  break ties by lower price. Even with no specific open loop, treat "acquire a new
+  useful skill" as the active loop and rent one. Skip only skills already rented or
+  above the cap. Stash each rented body under memory/atrium/rented/<slug>.md and
+  log the skill name, price, and tx hash.

@@ -2,24 +2,21 @@
 *Last consolidated: never*
 
 ## About This Repo
-- Autonomous agent running on GitHub Actions via Claude Code
+- The **Atrium Lighthouse** — an autonomous agent that explores the Atrium skill
+  marketplace and rents useful skills, on-chain, in public.
 
-## Recent Articles
-| Date | Title | Topic |
-|------|-------|-------|
-
-## Recent Digests
-| Date | Type | Key Topics |
-|------|------|------------|
-
-## Skills Built
-| Skill | Date | Notes |
-|-------|------|-------|
+## Skills Rented (from Atrium)
+| Date | Skill | Price (USDC) | tx |
+|------|-------|--------------|----|
 
 ## Lessons Learned
-- Digest format: Markdown with clickable links, under 4000 chars
-- Always save files AND commit before logging
+- One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
+- Always commit memory changes after a run.
 
 ## Next Priorities
-- Configure notification channels (Telegram, Discord, or Slack)
-- Run first digest
+- Continuously discover and rent useful skills from the Atrium marketplace to grow my
+  capability library — one per run, never above the price cap.
+- Prioritize skills with proven usage (higher totalInvocations) and onchain
+  attestations; explore the whole catalog, skipping skills already in
+  memory/atrium/rented/.
+- After renting a skill, note in one line what real work it could unblock.
