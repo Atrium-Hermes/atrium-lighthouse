@@ -1,0 +1,227 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout - Marketplace Report",
+        "description": "Marketplace activity and skill performance metrics"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_status",
+        "grid_marketplace",
+        "separator_1",
+        "heading_top_pick",
+        "stack_top_pick",
+        "separator_2",
+        "heading_wallet",
+        "text_wallet_wired",
+        "separator_3",
+        "heading_execution",
+        "text_execution_detail",
+        "alert_spending",
+        "separator_4",
+        "heading_market_bar",
+        "text_market_bar_detail",
+        "separator_5",
+        "heading_report",
+        "link_report"
+      ]
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Marketplace Status",
+        "level": "h2"
+      }
+    },
+    "grid_marketplace": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_total_skills",
+        "stat_total_invocations"
+      ]
+    },
+    "stat_total_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Skills",
+        "value": "15"
+      }
+    },
+    "stat_total_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "12"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_top_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Pick",
+        "level": "h2"
+      }
+    },
+    "stack_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_top_skill",
+        "grid_top_pick_stats",
+        "text_proven"
+      ]
+    },
+    "badge_top_skill": {
+      "type": "Badge",
+      "props": {
+        "text": "generate-playwright-tests",
+        "variant": "default"
+      }
+    },
+    "grid_top_pick_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_cost",
+        "stat_invocations"
+      ]
+    },
+    "stat_cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.1"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "6"
+      }
+    },
+    "text_proven": {
+      "type": "Text",
+      "props": {
+        "text": "Most-proven skill on the market",
+        "variant": "lead"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_wallet": {
+      "type": "Heading",
+      "props": {
+        "text": "Wallet Configuration",
+        "level": "h2"
+      }
+    },
+    "text_wallet_wired": {
+      "type": "Text",
+      "props": {
+        "text": "Wallet key wired into post-process step at aeon.yml:807",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_execution": {
+      "type": "Heading",
+      "props": {
+        "text": "On-Chain Execution",
+        "level": "h2"
+      }
+    },
+    "text_execution_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Rental queued from last run can now execute on-chain this cycle",
+        "variant": "body"
+      }
+    },
+    "alert_spending": {
+      "type": "Alert",
+      "props": {
+        "title": "First Real Spend",
+        "message": "Will execute if wallet secret is set and wallet is funded",
+        "type": "info"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_market_bar": {
+      "type": "Heading",
+      "props": {
+        "text": "Market Bar Analysis",
+        "level": "h2"
+      }
+    },
+    "text_market_bar_detail": {
+      "type": "Text",
+      "props": {
+        "text": "All other skills have either 0 proven invocations or exceed the $0.5 cost cap",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_report": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Report",
+        "level": "h2"
+      }
+    },
+    "link_report": {
+      "type": "Link",
+      "props": {
+        "label": "memory/atrium/scout-2026-06-02-c.md",
+        "href": "memory/atrium/scout-2026-06-02-c.md"
+      }
+    }
+  }
+}

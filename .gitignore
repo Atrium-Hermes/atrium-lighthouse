@@ -14,6 +14,7 @@
 .bankr-cache/
 .pending-notify/
 .pending-atrium/
+.atrium_skills_tmp.json
 .pending-replicate/
 .pending-supernotes/
 .pending-deploy/
