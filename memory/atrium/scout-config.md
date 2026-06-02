@@ -2,11 +2,11 @@
 #
 # Read by the atrium-scout skill.
 
-auto_invoke: false
+auto_invoke: true
 # false = report-only (discover + recommend, spend nothing). Flip to true ONLY after
 # the ATRIUM_PRIVATE_KEY wallet is funded with USDC + a little ETH on Base mainnet.
 
-max_price_usdc: 0.05
+max_price_usdc: 0.5
 # Never auto-invoke a skill priced above this. The scout rents at most ONE skill per run.
 
 allowed_categories: [document-processing, dev, research, crypto]
