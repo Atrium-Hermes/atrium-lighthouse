@@ -1,0 +1,245 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout (Run 4)",
+        "description": "Marketplace flat analysis"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "top-pick",
+        "sep2",
+        "excluded",
+        "sep3",
+        "rental"
+      ]
+    },
+    "summary": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills",
+        "stat-invocations"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Available Skills",
+        "value": "15"
+      }
+    },
+    "stat-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "12"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "top-pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top-heading",
+        "top-details"
+      ]
+    },
+    "top-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Pick Holds",
+        "level": "h3"
+      }
+    },
+    "top-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "top-name",
+        "top-specs"
+      ]
+    },
+    "top-name": {
+      "type": "Text",
+      "props": {
+        "text": "generate-playwright-tests",
+        "variant": "lead"
+      }
+    },
+    "top-specs": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "top-cost",
+        "top-inv",
+        "top-badge"
+      ]
+    },
+    "top-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.10"
+      }
+    },
+    "top-inv": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "6"
+      }
+    },
+    "top-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Most-proven | Under $0.5 cap",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "excluded": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "exc-heading",
+        "exc-details"
+      ]
+    },
+    "exc-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Excluded (Over Cap)",
+        "level": "h3"
+      }
+    },
+    "exc-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "exc-name",
+        "exc-specs"
+      ]
+    },
+    "exc-name": {
+      "type": "Text",
+      "props": {
+        "text": "crypto",
+        "variant": "lead"
+      }
+    },
+    "exc-specs": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "exc-cost",
+        "exc-inv"
+      ]
+    },
+    "exc-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$5"
+      }
+    },
+    "exc-inv": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "2"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "rental": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "rental-heading",
+        "rental-text",
+        "rental-fix",
+        "rental-alert",
+        "report"
+      ]
+    },
+    "rental-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Queued Rental Request",
+        "level": "h3"
+      }
+    },
+    "rental-text": {
+      "type": "Text",
+      "props": {
+        "text": "Status: In place and unrented",
+        "variant": "body"
+      }
+    },
+    "rental-fix": {
+      "type": "Text",
+      "props": {
+        "text": "Commit 23ecb65 fixed post-process bug that was skipping it on balance-query quirk",
+        "variant": "caption"
+      }
+    },
+    "rental-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "First Spend Settlement Ready",
+        "message": "This is the first run that can actually settle the spend. Pending: wallet key must be set and funded.",
+        "type": "info"
+      }
+    },
+    "report": {
+      "type": "Link",
+      "props": {
+        "label": "Full Report: memory/atrium/scout-2026-06-02-d.md",
+        "href": "memory/atrium/scout-2026-06-02-d.md"
+      }
+    }
+  }
+}
