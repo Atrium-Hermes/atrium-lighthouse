@@ -1,0 +1,221 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout",
+        "description": "Marketplace skill evaluation — 2026-06-02"
+      },
+      "children": [
+        "heading_summary",
+        "stats_section",
+        "separator_1",
+        "findings_section",
+        "separator_2",
+        "context_section",
+        "separator_3",
+        "alert_conclusion",
+        "separator_4",
+        "link_report"
+      ]
+    },
+    "heading_summary": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-06-02 Marketplace Snapshot",
+        "level": "h2"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_skills",
+        "stat_invocations"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Live",
+        "value": "15"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "~11"
+      }
+    },
+    "separator_1": {
+      "type": "Separator"
+    },
+    "findings_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_match",
+        "match_stack"
+      ]
+    },
+    "heading_match": {
+      "type": "Heading",
+      "props": {
+        "text": "Genuine Match Found",
+        "level": "h3"
+      }
+    },
+    "match_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_github_code_review",
+        "stat_cost",
+        "text_purpose"
+      ]
+    },
+    "badge_github_code_review": {
+      "type": "Badge",
+      "props": {
+        "text": "github-code-review",
+        "variant": "default"
+      }
+    },
+    "stat_cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost per invocation",
+        "value": "$0.005"
+      }
+    },
+    "text_purpose": {
+      "type": "Text",
+      "props": {
+        "text": "Covers the PR-review step mandated in workflow",
+        "variant": "caption"
+      }
+    },
+    "separator_2": {
+      "type": "Separator"
+    },
+    "context_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_context",
+        "blockers_subsection",
+        "other_subsection"
+      ]
+    },
+    "heading_context": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Nothing Was Rented",
+        "level": "h3"
+      }
+    },
+    "blockers_subsection": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_blockers",
+        "blocker_1",
+        "blocker_2",
+        "blocker_3"
+      ]
+    },
+    "text_blockers": {
+      "type": "Text",
+      "props": {
+        "text": "Key blockers:",
+        "variant": "body"
+      }
+    },
+    "blocker_1": {
+      "type": "Text",
+      "props": {
+        "text": "No PR open to review",
+        "variant": "body"
+      }
+    },
+    "blocker_2": {
+      "type": "Text",
+      "props": {
+        "text": "Skill has zero proven invocations",
+        "variant": "body"
+      }
+    },
+    "blocker_3": {
+      "type": "Text",
+      "props": {
+        "text": "Atrium CLI/wallet key not reachable in this sandbox",
+        "variant": "body"
+      }
+    },
+    "other_subsection": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_other_intro",
+        "text_other_detail"
+      ]
+    },
+    "text_other_intro": {
+      "type": "Heading",
+      "props": {
+        "text": "Other skills (14)",
+        "level": "h4"
+      }
+    },
+    "text_other_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Onchain finance: swaps, token intelligence, wallet operations. On-beat for Base, but no active trading loop to justify spending.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator"
+    },
+    "alert_conclusion": {
+      "type": "Alert",
+      "props": {
+        "title": "Verdict",
+        "message": "Nothing worth paying for today",
+        "type": "info"
+      }
+    },
+    "separator_4": {
+      "type": "Separator"
+    },
+    "link_report": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Report",
+        "href": "memory/atrium/scout-2026-06-02.md",
+        "source": "Atrium Scout"
+      }
+    }
+  }
+}
