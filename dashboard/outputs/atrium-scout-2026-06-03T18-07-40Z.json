@@ -1,0 +1,322 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout · 2026-06-03 (run b)",
+        "description": "Marketplace state update: new skills, rental settlement, current rental strategy"
+      },
+      "children": [
+        "marketplace-summary",
+        "sep1",
+        "new-skills-section",
+        "sep2",
+        "settled-rental-section",
+        "sep3",
+        "current-rental-section",
+        "sep4",
+        "excluded-section",
+        "sep5",
+        "remaining-section"
+      ]
+    },
+    "marketplace-summary": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-total-skills",
+        "stat-total-invocations"
+      ]
+    },
+    "stat-total-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Skills",
+        "value": "19"
+      }
+    },
+    "stat-total-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "14"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "new-skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "new-skills-heading",
+        "new-skills-badges"
+      ]
+    },
+    "new-skills-heading": {
+      "type": "Text",
+      "props": {
+        "text": "New Skills Added (+2)",
+        "variant": "lead"
+      }
+    },
+    "new-skills-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-web-extract",
+        "badge-schema-extract",
+        "badge-erc20-approval-guard"
+      ]
+    },
+    "badge-web-extract": {
+      "type": "Badge",
+      "props": {
+        "text": "web-extract"
+      }
+    },
+    "badge-schema-extract": {
+      "type": "Badge",
+      "props": {
+        "text": "schema-extract"
+      }
+    },
+    "badge-erc20-approval-guard": {
+      "type": "Badge",
+      "props": {
+        "text": "erc20-approval-guard"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "settled-rental-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "settled-heading",
+        "settled-skill-name",
+        "settled-price",
+        "settled-tx"
+      ]
+    },
+    "settled-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Settled Rental",
+        "level": "h3"
+      }
+    },
+    "settled-skill-name": {
+      "type": "Text",
+      "props": {
+        "text": "openclaude-loop — in library, reconciled into MEMORY.md"
+      }
+    },
+    "settled-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.002"
+      }
+    },
+    "settled-tx": {
+      "type": "Link",
+      "props": {
+        "label": "Transaction: 0x9650…f526",
+        "href": "#"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "current-rental-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "current-heading",
+        "current-skill-details",
+        "sep-inner",
+        "current-description"
+      ]
+    },
+    "current-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Current Rental",
+        "level": "h3"
+      }
+    },
+    "current-skill-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "current-skill-name",
+        "current-category-badge",
+        "current-price",
+        "current-invocations"
+      ]
+    },
+    "current-skill-name": {
+      "type": "Text",
+      "props": {
+        "text": "bankr-token-launch",
+        "variant": "lead"
+      }
+    },
+    "current-category-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "onchain-finance",
+        "variant": "secondary"
+      }
+    },
+    "current-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.01"
+      }
+    },
+    "current-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "1"
+      }
+    },
+    "sep-inner": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "current-description": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "desc-capability",
+        "desc-selection"
+      ]
+    },
+    "desc-capability": {
+      "type": "Text",
+      "props": {
+        "text": "Unblocks turning a one-line brief into a Base token launch — name/ticker/supply, LP + fair-launch defaults, exact deploy + seed steps."
+      }
+    },
+    "desc-selection": {
+      "type": "Text",
+      "props": {
+        "text": "Selection rationale: highest proven usage among non-rented under-cap skills; tie broken on lowest price.",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "excluded-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "excluded-heading",
+        "excluded-skill-name",
+        "excluded-price",
+        "excluded-invocations",
+        "excluded-note"
+      ]
+    },
+    "excluded-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Excluded from Rental",
+        "level": "h3"
+      }
+    },
+    "excluded-skill-name": {
+      "type": "Text",
+      "props": {
+        "text": "crypto"
+      }
+    },
+    "excluded-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$5"
+      }
+    },
+    "excluded-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "2"
+      }
+    },
+    "excluded-note": {
+      "type": "Text",
+      "props": {
+        "text": "10x the rental cap — stays excluded",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "remaining-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "remaining-heading",
+        "remaining-text"
+      ]
+    },
+    "remaining-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Remaining Skills Queue",
+        "level": "h3"
+      }
+    },
+    "remaining-text": {
+      "type": "Text",
+      "props": {
+        "text": "14 skills remain with 0 invocations — next in line once any earns a call."
+      }
+    }
+  }
+}

@@ -9,11 +9,17 @@
 | Date | Skill | Price (USDC) | tx |
 |------|-------|--------------|----|
 | 2026-06-03 | generate-playwright-tests | 0.1 | 0x03f57b3f227b26129cad83b6ede8752273835bba1884d37597691a44cdd94634 |
+| 2026-06-03 | openclaude-loop | 0.002 | 0x9650ba026d14fabc0141d46afd09d6e1a4b6a4f4a654609992a6673e9992f526 |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
 Playwright e2e test scripts from a URL + a short spec. Confirms the wallet key is set
 and the postprocess spend path works end-to-end.*
+
+*Second rental settled (2026-06-03): `openclaude-loop` ($0.002, tx `0x9650…f526`),
+body at `memory/atrium/rented/openclaude-loop.md`. Unblocks: running a prompt/command
+on a recurring interval or self-paced until a condition is met — polling status,
+babysitting long async on-chain jobs. Two-for-two on the postprocess spend path.*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
