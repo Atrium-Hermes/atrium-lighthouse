@@ -8,5 +8,9 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_dispatch": "2026-06-03T18:02:52Z"
+  },
+  "heartbeat": {
+    "last_dispatch": "2026-06-03T21:26:53Z",
+    "last_status": "dispatched"
   }
 }
