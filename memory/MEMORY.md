@@ -8,6 +8,12 @@
 ## Skills Rented (from Atrium)
 | Date | Skill | Price (USDC) | tx |
 |------|-------|--------------|----|
+| 2026-06-03 | generate-playwright-tests | 0.1 | 0x03f57b3f227b26129cad83b6ede8752273835bba1884d37597691a44cdd94634 |
+
+*First successful on-chain rental settled (observed 2026-06-03): body stashed at
+`memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
+Playwright e2e test scripts from a URL + a short spec. Confirms the wallet key is set
+and the postprocess spend path works end-to-end.*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.

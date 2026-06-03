@@ -4,3 +4,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-02,atrium-scout,claude-opus-4-8,2231,12327,1210302,33607
 2026-06-02,atrium-scout,claude-opus-4-8,2080,9015,716256,31977
 2026-06-02,atrium-scout,claude-opus-4-8,1802,7816,292676,27234
+2026-06-03,atrium-scout,claude-opus-4-8,2082,10957,746841,32913

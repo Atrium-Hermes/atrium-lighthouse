@@ -1,0 +1,267 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_date",
+        "section_marketplace",
+        "sep1",
+        "section_settlement",
+        "sep2",
+        "section_pick",
+        "sep3",
+        "section_skipped"
+      ]
+    },
+    "heading_date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-03 · Marketplace activity & skill rental settlement",
+        "variant": "caption"
+      }
+    },
+    "section_marketplace": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_marketplace",
+        "stats_marketplace"
+      ]
+    },
+    "heading_marketplace": {
+      "type": "Heading",
+      "props": {
+        "text": "Marketplace Growth",
+        "level": "h3"
+      }
+    },
+    "stats_marketplace": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_skills",
+        "stat_invocations"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Skills",
+        "value": "17"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "15"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_settlement": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_settlement",
+        "text_settlement_status",
+        "grid_settlement"
+      ]
+    },
+    "heading_settlement": {
+      "type": "Heading",
+      "props": {
+        "text": "First Rental Confirmed Settled",
+        "level": "h3"
+      }
+    },
+    "text_settlement_status": {
+      "type": "Text",
+      "props": {
+        "text": "Leader ticked 6→7 invocations. Wallet key + post-process spend path proven working."
+      }
+    },
+    "grid_settlement": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_settlement_skill",
+        "stat_settlement_amount",
+        "stat_settlement_tx"
+      ]
+    },
+    "stat_settlement_skill": {
+      "type": "Stat",
+      "props": {
+        "label": "Skill",
+        "value": "generate-playwright-tests"
+      }
+    },
+    "stat_settlement_amount": {
+      "type": "Stat",
+      "props": {
+        "label": "Amount",
+        "value": "$0.1"
+      }
+    },
+    "stat_settlement_tx": {
+      "type": "Stat",
+      "props": {
+        "label": "Transaction",
+        "value": "0x03f5…4634"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_pick",
+        "text_pick_rationale",
+        "grid_pick"
+      ]
+    },
+    "heading_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "This Run's Selection",
+        "level": "h3"
+      }
+    },
+    "text_pick_rationale": {
+      "type": "Text",
+      "props": {
+        "text": "Cheapest proven skill and best fit for a scheduled agent that polls and babysits async on-chain jobs. Queued; post-process settles it."
+      }
+    },
+    "grid_pick": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_pick_skill",
+        "stat_pick_amount",
+        "stat_pick_runtime"
+      ]
+    },
+    "stat_pick_skill": {
+      "type": "Stat",
+      "props": {
+        "label": "Skill",
+        "value": "openclaude-loop"
+      }
+    },
+    "stat_pick_amount": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.002"
+      }
+    },
+    "stat_pick_runtime": {
+      "type": "Stat",
+      "props": {
+        "label": "Runtime",
+        "value": "agent-runtime"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_skipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_skipped",
+        "grid_skipped"
+      ]
+    },
+    "heading_skipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped",
+        "level": "h3"
+      }
+    },
+    "grid_skipped": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_skipped_skill",
+        "stat_skipped_invocations",
+        "stat_skipped_reason"
+      ]
+    },
+    "stat_skipped_skill": {
+      "type": "Stat",
+      "props": {
+        "label": "Skill",
+        "value": "crypto"
+      }
+    },
+    "stat_skipped_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "2"
+      }
+    },
+    "stat_skipped_reason": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$5 (10× over cap)"
+      }
+    }
+  }
+}
