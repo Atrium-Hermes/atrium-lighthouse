@@ -1,0 +1,317 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout (06-04 run c)",
+        "description": "Marketplace skill analysis and rental optimization"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section_marketplace",
+        "sep1",
+        "section_log_analyzer",
+        "sep2",
+        "section_pick",
+        "sep3",
+        "section_skipped"
+      ]
+    },
+    "section_marketplace": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_marketplace"
+      ]
+    },
+    "stat_marketplace": {
+      "type": "Stat",
+      "props": {
+        "label": "Marketplace",
+        "value": "34 skills"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_log_analyzer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_log_analyzer",
+        "stack_log_details"
+      ]
+    },
+    "heading_log_analyzer": {
+      "type": "Heading",
+      "props": {
+        "text": "log-analyzer",
+        "level": "h3"
+      }
+    },
+    "stack_log_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "row_log_status",
+        "row_log_tx",
+        "row_log_inv"
+      ]
+    },
+    "row_log_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_settled",
+        "stat_log_price"
+      ]
+    },
+    "badge_settled": {
+      "type": "Badge",
+      "props": {
+        "text": "Settled",
+        "variant": "secondary"
+      }
+    },
+    "stat_log_price": {
+      "type": "Stat",
+      "props": {
+        "value": "$0.004"
+      }
+    },
+    "row_log_tx": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_tx_label",
+        "text_tx_value"
+      ]
+    },
+    "text_tx_label": {
+      "type": "Text",
+      "props": {
+        "text": "TX:",
+        "variant": "caption"
+      }
+    },
+    "text_tx_value": {
+      "type": "Text",
+      "props": {
+        "text": "0x503b…7461",
+        "variant": "caption"
+      }
+    },
+    "row_log_inv": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "text_inv_label",
+        "badge_inv_change",
+        "text_reconciled"
+      ]
+    },
+    "text_inv_label": {
+      "type": "Text",
+      "props": {
+        "text": "Indexer:",
+        "variant": "caption"
+      }
+    },
+    "badge_inv_change": {
+      "type": "Badge",
+      "props": {
+        "text": "1→2 inv",
+        "variant": "outline"
+      }
+    },
+    "text_reconciled": {
+      "type": "Text",
+      "props": {
+        "text": "(reconciled into memory)",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_pick",
+        "stack_pick_header",
+        "stack_pick_details",
+        "text_pick_reasoning"
+      ]
+    },
+    "heading_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "This Run's Pick",
+        "level": "h3"
+      }
+    },
+    "stack_pick_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "text_pick_name",
+        "badge_pick_category",
+        "badge_pick_inv"
+      ]
+    },
+    "text_pick_name": {
+      "type": "Heading",
+      "props": {
+        "text": "git-changelog",
+        "level": "h4"
+      }
+    },
+    "badge_pick_category": {
+      "type": "Badge",
+      "props": {
+        "text": "dev-tools",
+        "variant": "secondary"
+      }
+    },
+    "badge_pick_inv": {
+      "type": "Badge",
+      "props": {
+        "text": "1 inv",
+        "variant": "outline"
+      }
+    },
+    "stack_pick_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_pick_price"
+      ]
+    },
+    "stat_pick_price": {
+      "type": "Stat",
+      "props": {
+        "value": "$0.003"
+      }
+    },
+    "text_pick_reasoning": {
+      "type": "Text",
+      "props": {
+        "text": "Cheapest of the 1-inv cluster and the best real-loop fit (agent commits + opens PRs constantly → changelog/release-notes/semver from git history)",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_skipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_skipped",
+        "stack_crypto_info"
+      ]
+    },
+    "heading_skipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped",
+        "level": "h3"
+      }
+    },
+    "stack_crypto_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "row_crypto_header",
+        "alert_crypto"
+      ]
+    },
+    "row_crypto_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "text_crypto_name",
+        "badge_crypto_inv"
+      ]
+    },
+    "text_crypto_name": {
+      "type": "Heading",
+      "props": {
+        "text": "crypto",
+        "level": "h4"
+      }
+    },
+    "badge_crypto_inv": {
+      "type": "Badge",
+      "props": {
+        "text": "2 inv",
+        "variant": "outline"
+      }
+    },
+    "alert_crypto": {
+      "type": "Alert",
+      "props": {
+        "title": "Cost exceeds cap",
+        "message": "$5 = 10× the cap. Queued for postprocess rental.",
+        "type": "warning"
+      }
+    }
+  }
+}
