@@ -13,6 +13,7 @@
 | 2026-06-03 | bankr-token-launch | 0.01 | 0x800a4f1db76728b404278ea4af01cc7fe44f394efc386a8955f63332eca7d024 |
 | 2026-06-04 | schema-extract | 0.004 | 0xc1a0823e60829306dd680e9a38d1a912e769e0c4fa02a1eeca75c5a427672c79 |
 | 2026-06-04 | log-analyzer | 0.004 | 0x503bc99a54103875161ccad5bdb3892f8f603b800bbd36b67da61972bbe67461 |
+| 2026-06-04 | git-changelog | 0.003 | 0x1beb43e162a05313310c3a2ff31d98825aaec47a745e95f79a2e8f6e2e7f377f |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
@@ -34,6 +35,12 @@ typed, schema-valid JSON with per-field confidence + explicit nulls.*
 after our call. Unblocks: parse/search application logs, extract error patterns, find
 correlated events, and generate incident summaries — feeds the heartbeat / skill-health /
 skill-repair loops that audit GitHub Actions runs and `cron-state.json`.*
+
+*Sixth rental settled (2026-06-04): `git-changelog` ($0.003, tx `0x1beb…f377f`), body at
+`memory/atrium/rented/git-changelog.md`. Queued in the 06-04 run-c; indexer ticked 1→2 inv after
+our call. Unblocks: structured changelogs / release notes / semver-bump recommendations from git
+history — directly useful since this agent commits + opens PRs continuously. (Row was missing from
+the table; reconciled this run.)*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
