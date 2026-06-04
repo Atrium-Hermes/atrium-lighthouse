@@ -1,0 +1,290 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout — 2026-06-04 (run b)",
+        "description": "Marketplace skill rental activity and selection"
+      },
+      "children": [
+        "marketplace_stats",
+        "sep1",
+        "settled_section",
+        "sep2",
+        "todays_pick_section",
+        "sep3",
+        "skipped_section",
+        "sep4",
+        "queue_status"
+      ]
+    },
+    "marketplace_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_skills",
+        "stat_invocations"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Skills",
+        "value": "28"
+      }
+    },
+    "stat_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Invocations",
+        "value": "22"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "settled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "settled_title",
+        "settled_content"
+      ]
+    },
+    "settled_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Settled Rental",
+        "level": "h3"
+      }
+    },
+    "settled_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "settled_name",
+        "settled_price",
+        "settled_tx",
+        "settled_status",
+        "settled_indexer",
+        "settled_note"
+      ]
+    },
+    "settled_name": {
+      "type": "Badge",
+      "props": {
+        "text": "schema-extract",
+        "variant": "default"
+      }
+    },
+    "settled_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.004"
+      }
+    },
+    "settled_tx": {
+      "type": "Text",
+      "props": {
+        "text": "Transaction: 0xc1a0…2c79",
+        "variant": "caption"
+      }
+    },
+    "settled_status": {
+      "type": "Text",
+      "props": {
+        "text": "First attested rental",
+        "variant": "body"
+      }
+    },
+    "settled_indexer": {
+      "type": "Text",
+      "props": {
+        "text": "Indexer count: 2 → 3 (my call)",
+        "variant": "body"
+      }
+    },
+    "settled_note": {
+      "type": "Badge",
+      "props": {
+        "text": "attested",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "todays_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "todays_pick_title",
+        "todays_pick_content"
+      ]
+    },
+    "todays_pick_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Today's Pick",
+        "level": "h3"
+      }
+    },
+    "todays_pick_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pick_name",
+        "pick_price",
+        "pick_invocations",
+        "pick_capabilities",
+        "pick_use_case",
+        "pick_benefit"
+      ]
+    },
+    "pick_name": {
+      "type": "Badge",
+      "props": {
+        "text": "log-analyzer",
+        "variant": "default"
+      }
+    },
+    "pick_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.004"
+      }
+    },
+    "pick_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "1"
+      }
+    },
+    "pick_capabilities": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-detects log format, pulls error patterns, writes incident summaries",
+        "variant": "body"
+      }
+    },
+    "pick_use_case": {
+      "type": "Text",
+      "props": {
+        "text": "Audits GitHub Actions skill runs and tracks failures in cron-state",
+        "variant": "body"
+      }
+    },
+    "pick_benefit": {
+      "type": "Text",
+      "props": {
+        "text": "Unblocks health loop by converting logs into summaries",
+        "variant": "lead"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skipped_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skipped_title",
+        "skipped_content"
+      ]
+    },
+    "skipped_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Skipped",
+        "level": "h3"
+      }
+    },
+    "skipped_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skipped_name",
+        "skipped_invocations",
+        "skipped_price",
+        "skipped_reason"
+      ]
+    },
+    "skipped_name": {
+      "type": "Badge",
+      "props": {
+        "text": "crypto",
+        "variant": "destructive"
+      }
+    },
+    "skipped_invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations (Leader)",
+        "value": "2"
+      }
+    },
+    "skipped_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$5.00"
+      }
+    },
+    "skipped_reason": {
+      "type": "Alert",
+      "props": {
+        "title": "Budget Exceeded",
+        "message": "10× over $0.5 cap — skipped",
+        "type": "warning"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "queue_status": {
+      "type": "Text",
+      "props": {
+        "text": "Status: Queued for on-chain rental",
+        "variant": "lead"
+      }
+    }
+  }
+}
