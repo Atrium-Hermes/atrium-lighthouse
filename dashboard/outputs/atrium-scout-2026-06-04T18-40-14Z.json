@@ -1,0 +1,176 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout (06-04 run d)"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "semver-decide-section",
+        "sep1",
+        "git-changelog-section",
+        "sep2",
+        "crypto-alert",
+        "sep3",
+        "queue-note"
+      ]
+    },
+    "semver-decide-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "semver-decide-heading",
+        "semver-decide-stat",
+        "semver-decide-detail1",
+        "semver-decide-detail2",
+        "semver-decide-badge"
+      ]
+    },
+    "semver-decide-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "semver-decide",
+        "level": "h3"
+      }
+    },
+    "semver-decide-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.002"
+      }
+    },
+    "semver-decide-detail1": {
+      "type": "Text",
+      "props": {
+        "text": "1 inv + 1 onchain attestation"
+      }
+    },
+    "semver-decide-detail2": {
+      "type": "Text",
+      "props": {
+        "text": "The only affordable non-rented skill with both proven usage and a stake. Pairs with last run's git-changelog to complete a release-automation pipeline."
+      }
+    },
+    "semver-decide-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Renting",
+        "variant": "default"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "git-changelog-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "git-changelog-heading",
+        "git-changelog-stat",
+        "git-changelog-badges",
+        "git-changelog-detail1",
+        "git-changelog-detail2"
+      ]
+    },
+    "git-changelog-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "git-changelog",
+        "level": "h3"
+      }
+    },
+    "git-changelog-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.003"
+      }
+    },
+    "git-changelog-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "git-changelog-badge1",
+        "git-changelog-badge2"
+      ]
+    },
+    "git-changelog-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Settled",
+        "variant": "secondary"
+      }
+    },
+    "git-changelog-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Reconciled",
+        "variant": "secondary"
+      }
+    },
+    "git-changelog-detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Was missing from the rentals table"
+      }
+    },
+    "git-changelog-detail2": {
+      "type": "Text",
+      "props": {
+        "text": "Indexer ticked 1→2 inv"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "crypto-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "crypto (2 inv)",
+        "message": "Excluded — 10x over $0.5 cap",
+        "type": "warning"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "queue-note": {
+      "type": "Text",
+      "props": {
+        "text": "Queued at .pending-atrium/semver-decide.json for the post-process spend",
+        "variant": "caption"
+      }
+    }
+  }
+}
