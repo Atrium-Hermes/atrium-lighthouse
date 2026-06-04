@@ -1,0 +1,88 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "main-status",
+        "timestamp",
+        "p012-status",
+        "p3-status",
+        "action-notes"
+      ]
+    },
+    "main-status": {
+      "type": "Alert",
+      "props": {
+        "title": "WATCH",
+        "message": "Yellow alert — monitoring status",
+        "type": "warning"
+      }
+    },
+    "timestamp": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-04 20:37 UTC",
+        "variant": "caption"
+      }
+    },
+    "p012-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p012-title",
+        "scout-stat",
+        "p012-detail1",
+        "p012-detail2"
+      ]
+    },
+    "p012-title": {
+      "type": "Heading",
+      "props": {
+        "text": "P0/P1/P2: All Green",
+        "level": "h3"
+      }
+    },
+    "scout-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "atrium-scout",
+        "value": "11/11 (100%)"
+      }
+    },
+    "p012-detail1": {
+      "type": "Text",
+      "props": {
+        "text": "No failed or stuck skills"
+      }
+    },
+    "p012-detail2": {
+      "type": "Text",
+      "props": {
+        "text": "No open PRs or urgent issues"
+      }
+    },
+    "p3-status": {
+      "type": "Alert",
+      "props": {
+        "title": "P3: atrium-earnings",
+        "message": "Enabled daily 14:00 UTC. No run recorded — first scheduled slot today (14:00) was missed ~6.5h ago.",
+        "type": "warning"
+      }
+    },
+    "action-notes": {
+      "type": "Text",
+      "props": {
+        "text": "Watching next slot before filing an issue. Status page updated.",
+        "variant": "muted"
+      }
+    }
+  }
+}
