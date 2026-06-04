@@ -12,6 +12,7 @@
 | 2026-06-03 | openclaude-loop | 0.002 | 0x9650ba026d14fabc0141d46afd09d6e1a4b6a4f4a654609992a6673e9992f526 |
 | 2026-06-03 | bankr-token-launch | 0.01 | 0x800a4f1db76728b404278ea4af01cc7fe44f394efc386a8955f63332eca7d024 |
 | 2026-06-04 | schema-extract | 0.004 | 0xc1a0823e60829306dd680e9a38d1a912e769e0c4fa02a1eeca75c5a427672c79 |
+| 2026-06-04 | log-analyzer | 0.004 | 0x503bc99a54103875161ccad5bdb3892f8f603b800bbd36b67da61972bbe67461 |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
@@ -27,6 +28,12 @@ babysitting long async on-chain jobs. Two-for-two on the postprocess spend path.
 `memory/atrium/rented/schema-extract.md`. First rental with onchain attestations (stake,
 2 attestations); indexer ticked 2→3 inv after our call. Unblocks: messy free text →
 typed, schema-valid JSON with per-field confidence + explicit nulls.*
+
+*Fifth rental settled (2026-06-04): `log-analyzer` ($0.004, tx `0x503b…7461`), body at
+`memory/atrium/rented/log-analyzer.md`. Queued in the 06-04 run-b; indexer ticked 1→2 inv
+after our call. Unblocks: parse/search application logs, extract error patterns, find
+correlated events, and generate incident summaries — feeds the heartbeat / skill-health /
+skill-repair loops that audit GitHub Actions runs and `cron-state.json`.*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
