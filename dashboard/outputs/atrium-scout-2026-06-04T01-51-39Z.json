@@ -1,0 +1,263 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium scout · 2026-06-04",
+        "description": "Market analysis and skill rental reconciliation"
+      },
+      "children": [
+        "market-overview",
+        "sep1",
+        "schema-extract-section",
+        "crypto-section",
+        "sep2",
+        "rentals-section",
+        "sep3",
+        "report-link"
+      ]
+    },
+    "market-overview": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills",
+        "stat-invocations"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills",
+        "value": "25"
+      }
+    },
+    "stat-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "19"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "schema-extract-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "schema-extract-heading",
+        "schema-extract-stack"
+      ]
+    },
+    "schema-extract-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Renting: schema-extract",
+        "level": "h3"
+      }
+    },
+    "schema-extract-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "schema-extract-price",
+        "schema-extract-desc",
+        "schema-extract-metrics",
+        "schema-extract-cap"
+      ]
+    },
+    "schema-extract-price": {
+      "type": "Text",
+      "props": {
+        "text": "Price: $0.004",
+        "variant": "lead"
+      }
+    },
+    "schema-extract-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Messy free text → typed schema-valid JSON with per-field confidence and explicit nulls",
+        "variant": "body"
+      }
+    },
+    "schema-extract-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "schema-extract-inv",
+        "schema-extract-on-chain"
+      ]
+    },
+    "schema-extract-inv": {
+      "type": "Badge",
+      "props": {
+        "text": "2 invocations",
+        "variant": "outline"
+      }
+    },
+    "schema-extract-on-chain": {
+      "type": "Badge",
+      "props": {
+        "text": "2 on-chain attestations",
+        "variant": "secondary"
+      }
+    },
+    "schema-extract-cap": {
+      "type": "Text",
+      "props": {
+        "text": "Won on proven usage + attestations under the $0.5 cap",
+        "variant": "muted"
+      }
+    },
+    "crypto-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "crypto-heading",
+        "crypto-details"
+      ]
+    },
+    "crypto-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Crypto (excluded)",
+        "level": "h3"
+      }
+    },
+    "crypto-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "crypto-price",
+        "crypto-reason"
+      ]
+    },
+    "crypto-price": {
+      "type": "Text",
+      "props": {
+        "text": "2 invocations at $5/call",
+        "variant": "body"
+      }
+    },
+    "crypto-reason": {
+      "type": "Text",
+      "props": {
+        "text": "Excluded from rental market",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "rentals-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "rentals-heading",
+        "bankr-item",
+        "rentals-action"
+      ]
+    },
+    "rentals-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Rentals Table Reconciliation",
+        "level": "h3"
+      }
+    },
+    "bankr-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "bankr-name",
+        "bankr-price",
+        "bankr-tx",
+        "bankr-issue"
+      ]
+    },
+    "bankr-name": {
+      "type": "Text",
+      "props": {
+        "text": "bankr-token-launch",
+        "variant": "lead"
+      }
+    },
+    "bankr-price": {
+      "type": "Text",
+      "props": {
+        "text": "Price: $0.01",
+        "variant": "body"
+      }
+    },
+    "bankr-tx": {
+      "type": "Text",
+      "props": {
+        "text": "Transaction: 0x800a…d024",
+        "variant": "caption"
+      }
+    },
+    "bankr-issue": {
+      "type": "Alert",
+      "props": {
+        "title": "Discrepancy Found",
+        "message": "Had settled but wasn't logged",
+        "type": "warning"
+      }
+    },
+    "rentals-action": {
+      "type": "Alert",
+      "props": {
+        "title": "Action Queued",
+        "message": "Queued for the post-process spend step",
+        "type": "info"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "report-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Report",
+        "href": "memory/atrium/scout-2026-06-04.md",
+        "source": "Memory"
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@
 |------|-------|--------------|----|
 | 2026-06-03 | generate-playwright-tests | 0.1 | 0x03f57b3f227b26129cad83b6ede8752273835bba1884d37597691a44cdd94634 |
 | 2026-06-03 | openclaude-loop | 0.002 | 0x9650ba026d14fabc0141d46afd09d6e1a4b6a4f4a654609992a6673e9992f526 |
+| 2026-06-03 | bankr-token-launch | 0.01 | 0x800a4f1db76728b404278ea4af01cc7fe44f394efc386a8955f63332eca7d024 |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
