@@ -1,0 +1,204 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout (06-05)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_marketplace",
+        "sep_1",
+        "heading_reconciliation",
+        "item_semver_decide",
+        "sep_2",
+        "heading_pick",
+        "item_api_health",
+        "sep_3",
+        "alert_skipped"
+      ]
+    },
+    "stat_marketplace": {
+      "type": "Stat",
+      "props": {
+        "label": "Marketplace",
+        "value": "40 skills / 42 invocations"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_reconciliation": {
+      "type": "Heading",
+      "props": {
+        "text": "Reconciliation",
+        "level": "h3"
+      }
+    },
+    "item_semver_decide": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stack_sd_header",
+        "text_sd_issue"
+      ]
+    },
+    "stack_sd_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_sd_name",
+        "badge_sd_price",
+        "badge_sd_tx"
+      ]
+    },
+    "text_sd_name": {
+      "type": "Text",
+      "props": {
+        "text": "semver-decide"
+      }
+    },
+    "badge_sd_price": {
+      "type": "Badge",
+      "props": {
+        "text": "$0.002",
+        "variant": "secondary"
+      }
+    },
+    "badge_sd_tx": {
+      "type": "Badge",
+      "props": {
+        "text": "tx 0x4228…5cfa",
+        "variant": "outline"
+      }
+    },
+    "text_sd_issue": {
+      "type": "Text",
+      "props": {
+        "text": "Settled but missing from rentals table",
+        "variant": "muted"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "This Run's Pick",
+        "level": "h3"
+      }
+    },
+    "item_api_health": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stack_ah_header",
+        "text_ah_tier",
+        "text_ah_functionality",
+        "text_ah_purpose",
+        "text_ah_status"
+      ]
+    },
+    "stack_ah_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_ah_name",
+        "badge_ah_price",
+        "badge_ah_inv"
+      ]
+    },
+    "text_ah_name": {
+      "type": "Text",
+      "props": {
+        "text": "api-health-check"
+      }
+    },
+    "badge_ah_price": {
+      "type": "Badge",
+      "props": {
+        "text": "$0.003",
+        "variant": "secondary"
+      }
+    },
+    "badge_ah_inv": {
+      "type": "Badge",
+      "props": {
+        "text": "3 invocations",
+        "variant": "outline"
+      }
+    },
+    "text_ah_tier": {
+      "type": "Text",
+      "props": {
+        "text": "Top non-rented invocation tier and cheapest in it",
+        "variant": "caption"
+      }
+    },
+    "text_ah_functionality": {
+      "type": "Text",
+      "props": {
+        "text": "Probes endpoints, checks latency/SSL/rate limits and emits structured health reports",
+        "variant": "body"
+      }
+    },
+    "text_ah_purpose": {
+      "type": "Text",
+      "props": {
+        "text": "Feeds heartbeat/skill-health monitoring loops",
+        "variant": "body"
+      }
+    },
+    "text_ah_status": {
+      "type": "Text",
+      "props": {
+        "text": "Queued for on-chain rental; postprocess settles it",
+        "variant": "muted"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_skipped": {
+      "type": "Alert",
+      "props": {
+        "title": "Skipped",
+        "message": "crypto ($5) — 10x over the $0.5 cap",
+        "type": "info"
+      }
+    }
+  }
+}
