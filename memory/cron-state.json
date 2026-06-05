@@ -10,13 +10,17 @@
     "last_dispatch": "2026-06-05T12:48:34Z"
   },
   "heartbeat": {
-    "last_dispatch": "2026-06-04T20:36:35Z",
-    "last_status": "success",
+    "last_dispatch": "2026-06-05T15:42:07Z",
+    "last_status": "dispatched",
     "last_success": "2026-06-04T20:39:25Z",
     "total_runs": 2,
     "total_successes": 2,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1
+  },
+  "atrium-earnings": {
+    "last_dispatch": "2026-06-05T15:42:07Z",
+    "last_status": "dispatched"
   }
 }
