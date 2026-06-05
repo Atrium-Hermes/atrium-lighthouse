@@ -1,0 +1,279 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout — 06-05 run-c"
+      },
+      "children": [
+        "marketplace-section",
+        "sep1",
+        "settled-section",
+        "sep2",
+        "pick-section",
+        "sep3",
+        "rationale-section",
+        "sep4",
+        "report-section"
+      ]
+    },
+    "marketplace-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mkt-heading",
+        "mkt-stats"
+      ]
+    },
+    "mkt-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Marketplace",
+        "level": "h3"
+      }
+    },
+    "mkt-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-skills",
+        "stat-invocations"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills",
+        "value": "44"
+      }
+    },
+    "stat-invocations": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "~45"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "settled-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "settled-heading",
+        "settled-skill",
+        "settled-details",
+        "settled-note"
+      ]
+    },
+    "settled-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Settled Rental #9",
+        "level": "h3"
+      }
+    },
+    "settled-skill": {
+      "type": "Text",
+      "props": {
+        "text": "api-doc-generator",
+        "variant": "lead"
+      }
+    },
+    "settled-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "settled-cost",
+        "settled-tx",
+        "settled-indexer"
+      ]
+    },
+    "settled-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.008"
+      }
+    },
+    "settled-tx": {
+      "type": "Text",
+      "props": {
+        "text": "Transaction: 0x9845…0d145",
+        "variant": "caption"
+      }
+    },
+    "settled-indexer": {
+      "type": "Stat",
+      "props": {
+        "label": "Indexer",
+        "value": "4 inv"
+      }
+    },
+    "settled-note": {
+      "type": "Text",
+      "props": {
+        "text": "Reconciled into the rentals table",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pick-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pick-heading",
+        "pick-skill",
+        "pick-details"
+      ]
+    },
+    "pick-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "This Run's Pick",
+        "level": "h3"
+      }
+    },
+    "pick-skill": {
+      "type": "Text",
+      "props": {
+        "text": "json-repair",
+        "variant": "lead"
+      }
+    },
+    "pick-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pick-cost",
+        "pick-inv",
+        "pick-attestation"
+      ]
+    },
+    "pick-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.002"
+      }
+    },
+    "pick-inv": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "1"
+      }
+    },
+    "pick-attestation": {
+      "type": "Badge",
+      "props": {
+        "text": "1 on-chain attestation",
+        "variant": "outline"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "rationale-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "rationale-heading",
+        "rationale-skip",
+        "rationale-choice",
+        "rationale-use-case"
+      ]
+    },
+    "rationale-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Selection Rationale",
+        "level": "h3"
+      }
+    },
+    "rationale-skip": {
+      "type": "Text",
+      "props": {
+        "text": "Skipped higher-invocation tiers: crypto is 10x over the $0.5 cap; smart-extract overlaps the already-rented schema-extract."
+      }
+    },
+    "rationale-choice": {
+      "type": "Text",
+      "props": {
+        "text": "Took the cheapest attested skill that fits a recurring loop."
+      }
+    },
+    "rationale-use-case": {
+      "type": "Text",
+      "props": {
+        "text": "Parse indexer/API JSON every run. json-repair is the dependable cleanup step for malformed model output."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "report-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-line",
+        "report-link"
+      ]
+    },
+    "status-line": {
+      "type": "Text",
+      "props": {
+        "text": "Queued for spend",
+        "variant": "muted"
+      }
+    },
+    "report-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Scout Report",
+        "href": "memory/atrium/scout-2026-06-05-c.md"
+      }
+    }
+  }
+}

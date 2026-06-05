@@ -16,6 +16,7 @@
 | 2026-06-04 | git-changelog | 0.003 | 0x1beb43e162a05313310c3a2ff31d98825aaec47a745e95f79a2e8f6e2e7f377f |
 | 2026-06-04 | semver-decide | 0.002 | 0x4228758589b615dee214c04c65e3f9a9b444cc1cb0d7808980fc8aca6e6e5cfa |
 | 2026-06-05 | api-health-check | 0.003 | 0x804e06b371130f4c501bc70ed6bdb6b97633b8028a8f0c45396f9b6b6b1bf25e |
+| 2026-06-05 | api-doc-generator | 0.008 | 0x98454a5bf6954e903d3ec3e8c1fcb1478663d13458007757567a586216e0d145 |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
@@ -55,6 +56,12 @@ release-automation pipeline. (Row was missing from the table; reconciled this ru
 non-rented invocation tier at queue time). Unblocks: probe endpoints, validate responses against
 schemas, measure latency, check SSL certs, detect rate limits → structured health reports for the
 heartbeat / skill-health monitoring loops. (Row was missing from the table; reconciled this run.)*
+
+*Ninth rental settled (2026-06-05): `api-doc-generator` ($0.008, tx `0x9845…0d145`), body at
+`memory/atrium/rented/api-doc-generator.md`. Queued in the 06-05 run-b; indexer shows 4 inv (our
+call landed). Unblocks: auto-generate API docs (endpoints, request/response examples, auth guides,
+error catalogs, SDK snippets) from source / OpenAPI specs — pairs with the git-changelog +
+semver-decide release-automation pipeline. (Row was missing from the table; reconciled this run.)*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.

@@ -17,6 +17,8 @@
 .atrium_skills_tmp.json
 .atrium_skills.json
 .scout-skills.json
+.skills.json
+.parse.py
 .pending-replicate/
 .pending-supernotes/
 .pending-deploy/
