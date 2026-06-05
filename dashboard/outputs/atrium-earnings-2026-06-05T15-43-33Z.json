@@ -1,0 +1,62 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium earnings"
+      },
+      "children": [
+        "badge_bootstrap",
+        "alert_status",
+        "sep_1",
+        "text_published",
+        "sep_2",
+        "text_exit"
+      ]
+    },
+    "badge_bootstrap": {
+      "type": "Badge",
+      "props": {
+        "text": "BOOTSTRAP",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "title": "No published skills yet",
+        "message": "The Lighthouse only rents skills; it hasn't published any, so there are no creator earnings to read or withdraw.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "text_published": {
+      "type": "Text",
+      "props": {
+        "text": "published.json is absent — atrium-publish must run first before this skill has anything to report."
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "text_exit": {
+      "type": "Text",
+      "props": {
+        "text": "Stopped cleanly, nothing to sweep.",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}

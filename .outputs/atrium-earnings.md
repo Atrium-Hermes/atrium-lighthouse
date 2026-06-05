@@ -1,0 +1,1 @@
+Atrium earnings: BOOTSTRAP — no published skills yet. The Lighthouse only rents skills; it hasn't published any, so there are no creator earnings to read or withdraw. published.json is absent — atrium-publish must run first before this skill has anything to report. Stopped cleanly, nothing to sweep.

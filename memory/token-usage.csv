@@ -15,3 +15,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-05,atrium-scout,claude-opus-4-8,2231,9940,791949,29445
 2026-06-05,atrium-scout,claude-opus-4-8,2235,11208,1023158,43437
 2026-06-05,atrium-scout,claude-opus-4-8,2386,15636,1887172,57221
+2026-06-05,atrium-earnings,claude-opus-4-8,1947,4436,233749,18215
