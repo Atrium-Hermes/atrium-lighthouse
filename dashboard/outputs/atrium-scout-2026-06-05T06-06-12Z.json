@@ -1,0 +1,367 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Atrium Scout (06-05 run b)",
+        "description": "Skill marketplace selection and reconciliation"
+      },
+      "children": [
+        "health-section",
+        "sep-1",
+        "pick-section",
+        "sep-2",
+        "comparison-section",
+        "sep-3",
+        "status-section"
+      ]
+    },
+    "health-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "health-heading",
+        "health-status",
+        "health-details",
+        "memory-reconcile"
+      ]
+    },
+    "health-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "API Health Check",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "health-status": {
+      "type": "Badge",
+      "props": {
+        "text": "settled on-chain",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "health-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-health-cost",
+        "text-tx",
+        "text-body-stashed"
+      ]
+    },
+    "stat-health-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.003"
+      },
+      "children": []
+    },
+    "text-tx": {
+      "type": "Text",
+      "props": {
+        "text": "TX: 0x804e…f25e",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "text-body-stashed": {
+      "type": "Text",
+      "props": {
+        "text": "Body stashed",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "memory-reconcile": {
+      "type": "Alert",
+      "props": {
+        "title": "Memory Reconciliation",
+        "message": "Reconciled the missing MEMORY row",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pick-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pick-heading",
+        "pick-name",
+        "pick-metadata",
+        "pick-description"
+      ]
+    },
+    "pick-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "This Run's Pick",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "pick-name": {
+      "type": "Heading",
+      "props": {
+        "text": "api-doc-generator",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "pick-metadata": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-pick-cost",
+        "stat-pick-inv",
+        "badge-category",
+        "badge-status"
+      ]
+    },
+    "stat-pick-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$0.008"
+      },
+      "children": []
+    },
+    "stat-pick-inv": {
+      "type": "Stat",
+      "props": {
+        "label": "Invocations",
+        "value": "3"
+      },
+      "children": []
+    },
+    "badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "developer-tools/documentation",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-status": {
+      "type": "Badge",
+      "props": {
+        "text": "queued for rental",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "pick-description": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-capability",
+        "text-pipeline"
+      ]
+    },
+    "text-capability": {
+      "type": "Text",
+      "props": {
+        "text": "API docs from source or OpenAPI specs",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-pipeline": {
+      "type": "Text",
+      "props": {
+        "text": "Pairing with git-changelog + semver-decide release pipeline",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "comparison-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "comp-heading",
+        "comp-smart-extract",
+        "comp-rationale"
+      ]
+    },
+    "comp-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Selection Rationale",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "comp-smart-extract": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "comp-vs-heading",
+        "text-vs-smart"
+      ]
+    },
+    "comp-vs-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "vs. smart-extract",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-vs-smart": {
+      "type": "Text",
+      "props": {
+        "text": "Ties smart-extract on usage and price, but smart-extract just duplicates the schema-extract already rented",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "comp-rationale": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "comp-why-heading",
+        "text-why"
+      ]
+    },
+    "comp-why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why api-doc-generator",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "New capability — API docs from source or OpenAPI specs — pairing with git-changelog + semver-decide release pipeline",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status-heading",
+        "marketplace-stats",
+        "budget-section"
+      ]
+    },
+    "status-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Marketplace Status",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "marketplace-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-owned",
+        "stat-listed"
+      ]
+    },
+    "stat-owned": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Owned",
+        "value": "8"
+      },
+      "children": []
+    },
+    "stat-listed": {
+      "type": "Stat",
+      "props": {
+        "label": "Listed in Marketplace",
+        "value": "42"
+      },
+      "children": []
+    },
+    "budget-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "budget-heading",
+        "alert-crypto"
+      ]
+    },
+    "budget-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Budget Exclusions",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "alert-crypto": {
+      "type": "Alert",
+      "props": {
+        "title": "crypto",
+        "message": "Cost $5 stays excluded — 10x over the $0.5 cap",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}

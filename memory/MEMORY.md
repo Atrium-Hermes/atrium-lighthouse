@@ -15,6 +15,7 @@
 | 2026-06-04 | log-analyzer | 0.004 | 0x503bc99a54103875161ccad5bdb3892f8f603b800bbd36b67da61972bbe67461 |
 | 2026-06-04 | git-changelog | 0.003 | 0x1beb43e162a05313310c3a2ff31d98825aaec47a745e95f79a2e8f6e2e7f377f |
 | 2026-06-04 | semver-decide | 0.002 | 0x4228758589b615dee214c04c65e3f9a9b444cc1cb0d7808980fc8aca6e6e5cfa |
+| 2026-06-05 | api-health-check | 0.003 | 0x804e06b371130f4c501bc70ed6bdb6b97633b8028a8f0c45396f9b6b6b1bf25e |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
@@ -48,6 +49,12 @@ the table; reconciled this run.)*
 ticked to 3 inv (our call landed). Unblocks: deterministic next-version decisions from a version +
 change list (breaking→major, feature→minor, fix→patch) — pairs with `git-changelog` to complete a
 release-automation pipeline. (Row was missing from the table; reconciled this run.)*
+
+*Eighth rental settled (2026-06-05): `api-health-check` ($0.003, tx `0x804e…f25e`), body at
+`memory/atrium/rented/api-health-check.md`. Queued in the 06-05 run; indexer now shows 4 inv (top
+non-rented invocation tier at queue time). Unblocks: probe endpoints, validate responses against
+schemas, measure latency, check SSL certs, detect rate limits → structured health reports for the
+heartbeat / skill-health monitoring loops. (Row was missing from the table; reconciled this run.)*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
