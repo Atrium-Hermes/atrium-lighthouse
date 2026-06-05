@@ -14,6 +14,7 @@
 | 2026-06-04 | schema-extract | 0.004 | 0xc1a0823e60829306dd680e9a38d1a912e769e0c4fa02a1eeca75c5a427672c79 |
 | 2026-06-04 | log-analyzer | 0.004 | 0x503bc99a54103875161ccad5bdb3892f8f603b800bbd36b67da61972bbe67461 |
 | 2026-06-04 | git-changelog | 0.003 | 0x1beb43e162a05313310c3a2ff31d98825aaec47a745e95f79a2e8f6e2e7f377f |
+| 2026-06-04 | semver-decide | 0.002 | 0x4228758589b615dee214c04c65e3f9a9b444cc1cb0d7808980fc8aca6e6e5cfa |
 
 *First successful on-chain rental settled (observed 2026-06-03): body stashed at
 `memory/atrium/rented/generate-playwright-tests.md`. Unblocks: auto-generating
@@ -41,6 +42,12 @@ skill-repair loops that audit GitHub Actions runs and `cron-state.json`.*
 our call. Unblocks: structured changelogs / release notes / semver-bump recommendations from git
 history — directly useful since this agent commits + opens PRs continuously. (Row was missing from
 the table; reconciled this run.)*
+
+*Seventh rental settled (2026-06-04, observed 2026-06-05): `semver-decide` ($0.002, tx
+`0x4228…5cfa`), body at `memory/atrium/rented/semver-decide.md`. Queued in the 06-04 run-d; indexer
+ticked to 3 inv (our call landed). Unblocks: deterministic next-version decisions from a version +
+change list (breaking→major, feature→minor, fix→patch) — pairs with `git-changelog` to complete a
+release-automation pipeline. (Row was missing from the table; reconciled this run.)*
 
 ## Lessons Learned
 - One rental per scout run; never above the price cap in memory/atrium/scout-config.md.
