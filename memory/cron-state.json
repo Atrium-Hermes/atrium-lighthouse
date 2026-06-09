@@ -1,19 +1,19 @@
 {
   "atrium-scout": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-06-05T12:53:52Z",
     "total_runs": 51,
     "total_successes": 14,
     "total_failures": 37,
     "consecutive_failures": 37,
     "success_rate": 0.27,
-    "last_dispatch": "2026-06-09T22:10:26Z",
+    "last_dispatch": "2026-06-09T23:41:52Z",
     "last_failed": "2026-06-09T22:10:40Z",
     "last_error": "2b43817\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "heartbeat": {
-    "last_dispatch": "2026-06-09T22:10:26Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-06-09T23:41:52Z",
+    "last_status": "dispatched",
     "last_success": "2026-06-05T15:44:30Z",
     "total_runs": 55,
     "total_successes": 3,
@@ -24,8 +24,8 @@
     "last_error": "2c969fc\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "atrium-earnings": {
-    "last_dispatch": "2026-06-09T22:10:26Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-06-09T23:41:52Z",
+    "last_status": "dispatched",
     "last_success": "2026-06-05T15:44:04Z",
     "total_runs": 44,
     "total_successes": 1,
