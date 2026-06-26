@@ -1,15 +1,15 @@
 {
   "atrium-scout": {
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-06-05T12:53:52Z",
-    "total_runs": 166,
+    "total_runs": 167,
     "total_successes": 14,
-    "total_failures": 152,
-    "consecutive_failures": 152,
+    "total_failures": 153,
+    "consecutive_failures": 153,
     "success_rate": 0.08,
     "last_dispatch": "2026-06-26T15:53:28Z",
-    "last_failed": "2026-06-26T13:32:57Z",
-    "last_error": "ad2e375\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
+    "last_failed": "2026-06-26T15:53:42Z",
+    "last_error": "88b3f69\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\""
   },
   "heartbeat": {
     "last_dispatch": "2026-06-26T15:53:28Z",
