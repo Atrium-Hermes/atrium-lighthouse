@@ -1,14 +1,14 @@
 {
   "atrium-scout": {
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-06-05T12:53:52Z",
-    "total_runs": 561,
+    "total_runs": 562,
     "total_successes": 14,
-    "total_failures": 547,
-    "consecutive_failures": 547,
+    "total_failures": 548,
+    "consecutive_failures": 548,
     "success_rate": 0.02,
     "last_dispatch": "2026-07-24T22:19:25Z",
-    "last_failed": "2026-07-24T21:18:40Z",
+    "last_failed": "2026-07-24T22:22:33Z",
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\""
   },
   "heartbeat": {
