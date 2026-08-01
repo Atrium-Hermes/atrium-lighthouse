@@ -25,14 +25,14 @@
   },
   "atrium-earnings": {
     "last_dispatch": "2026-08-01T07:04:58Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-06-05T15:44:04Z",
-    "total_runs": 748,
+    "total_runs": 749,
     "total_successes": 1,
-    "total_failures": 747,
-    "consecutive_failures": 747,
+    "total_failures": 748,
+    "consecutive_failures": 748,
     "success_rate": 0,
-    "last_failed": "2026-08-01T04:37:15Z",
+    "last_failed": "2026-08-01T07:08:11Z",
     "last_error": "service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\""
   }
 }
