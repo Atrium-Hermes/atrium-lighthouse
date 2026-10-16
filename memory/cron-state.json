@@ -13,14 +13,14 @@
   },
   "heartbeat": {
     "last_dispatch": "2026-10-16T14:05:44Z",
-    "last_status": "dispatched",
+    "last_status": "failed",
     "last_success": "2026-06-05T15:44:30Z",
-    "total_runs": 1767,
+    "total_runs": 1768,
     "total_successes": 3,
-    "total_failures": 1764,
-    "consecutive_failures": 1764,
+    "total_failures": 1765,
+    "consecutive_failures": 1765,
     "success_rate": 0,
-    "last_failed": "2026-10-16T09:27:11Z",
+    "last_failed": "2026-10-16T14:06:09Z",
     "last_error": "started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type"
   },
   "atrium-earnings": {
